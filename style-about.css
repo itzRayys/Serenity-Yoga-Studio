@@ -106,3 +106,46 @@
 .classday{
     color: #98B4A6;
 }
+
+@media screen and (max-width: 768px) {
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+    }
+
+    .about-image, .about-container{
+        margin-top: 20px;
+        width: 80vw;
+    }
+
+    .about-description{
+        text-align: center;
+    }
+
+    .profiles-section{
+        padding: 15px;
+    }
+
+    .profiles-title{
+        font-size: 2em;
+    }
+
+    .profiles-legend{
+        width: 50vw;
+    }
+
+    .profile-image{
+        width: 100px;
+    }
+
+    .profile-name{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .profile-schedule{
+        font-size: 1em;
+        text-align: center;
+    }
+}

@@ -1,53 +1,5 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.header{
-    display: flex;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3vw 10px 3vw;
-    border-bottom: 2px solid #98B4A6;
-    box-shadow: 2px 0px 4px black;
-    position: relative; /* Ensures the z-index applies */
-    z-index: 10; /* Puts the header above the hero section */
-}
-
-.logo{
-    font-family: "Baskervville", serif;
-    text-decoration: none;
-    color: #E6E6FA;
-    font-size: 4vw;
-    white-space: nowrap;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 40vw;
-}
-
-.navlink, .navlink-end{
-    text-decoration: none;
-    color: #98B4A6;
-    font-family: "Alata", sans-serif;
-    font-size: larger;
-    transition: color 0.5s;
-}
-
-.navlink:hover, .navlink-end:hover{
-    color: #bbe8d3;
-}
-
-.navlink-divider{
-    color: #98B4A6;
-    font-weight: bolder;
-    border-left: solid;
-    border-width: 2px;
+body{
+    overflow-x: hidden;
 }
 
 .hero-section {
@@ -88,9 +40,17 @@
     font-family: "Baskervville", serif;
     font-size: 3vw;
     font-weight: 100;
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 0px 2px 4px black;
     margin-top: -75px;
+}
+
+.hero-tagline-highlight{
+    transition: text-shadow 0.5s;
+}
+
+.hero-tagline-highlight:hover{
+    text-shadow: 0 0 5px white;
 }
 
 .hero-description{
@@ -120,35 +80,4 @@
 .hero-CTA:hover{
     cursor: pointer;
     background-color: #f8eee7;
-}
-
-.footer{
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-social-media, .footer-contact{
-    width: 25vw;
-}
-
-.footer-social-media{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.footer-about{
-    width: 50vw;
-    text-align: center;
-    padding: 10px 5vw 0 5vw;
-    margin-bottom: 10px;
-}
-
-.footer-contact{
-    padding-top: 10px;
-    text-align: center;
-}
-
-.instagram-image, .twitter-image, .tiktok-image, .youtube-image{
-    width: 20px;
 }

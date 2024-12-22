@@ -31,10 +31,6 @@
     border: 1px solid #98B4A6;
 }
 
-.dropdown-option{
-    background-color: #98B4A6;
-}
-
 .text-email, .text-subject{
     resize: none;
     width: 100%;

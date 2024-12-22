@@ -7,13 +7,6 @@
 html, body {
     overflow-x: hidden;
 }
-
-body{
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-}
-
 .header{
     display: flex;
     height: 10vh;
@@ -25,6 +18,15 @@ body{
     box-shadow: 2px 0px 4px black;
     position: relative; /* Ensures the z-index applies */
     z-index: 10; /* Puts the header above the hero section */
+}
+
+.menu-button{
+    display: none;
+}
+
+.menu-icon{
+    width: 40px;
+    margin-top: 10px;
 }
 
 .logo{
@@ -39,10 +41,10 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
-    width: 40vw;
+    width: 50vw;
 }
 
-.navlink, .navlink-end{
+.navlink{
     text-decoration: none;
     color: #98B4A6;
     font-family: "Alata", sans-serif;
@@ -50,7 +52,7 @@ body{
     transition: color 0.5s;
 }
 
-.navlink:hover, .navlink-end:hover{
+.navlink:hover{
     color: #bbe8d3;
 }
 
@@ -59,4 +61,19 @@ body{
     font-weight: bolder;
     border-left: solid;
     border-width: 2px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-button {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 16px;
+    }
 }

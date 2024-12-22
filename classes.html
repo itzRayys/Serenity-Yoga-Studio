@@ -8,14 +8,27 @@
     <link rel="stylesheet" href="./style-classes.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="script" href="./script-menu.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Baskervville&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="menu-background" id="menu">
+      <div class="close-button-container">
+        <button class="menu-close-button" onclick="closeMenu()">X</button>
+      </div>
+      <a href="/" class="navigation-link"><div class="navigation-container">HOME</div></a>
+      <a href="/about.html" class="navigation-link"><div class="navigation-container">ABOUT</div></a>
+      <a href="/classes.html" class="navigation-link"><div class="navigation-container">CLASSES</div></a>
+      <a href="/schedule.html" class="navigation-link"><div class="navigation-container">SCHEDULE</div></a>
+      <a href="/contact.html" class="navigation-link"><div class="navigation-container">CONTACT</div></a>
+    </div>
     <div class="header">
       <a href="/" class="logo">Serenity Yoga Studio</a>
+      <button class="menu-button"><img src="images/menu-burger.png" alt="Noah Adofina" class="menu-icon"/></button>
       <div class="navbar">
         <a href="/" class="navlink">HOME</a><span class=navlink-divider></span>
         <a href="/about.html" class="navlink">ABOUT</a><span class=navlink-divider></span>
@@ -134,5 +147,6 @@
         <p class="contact-phone">(555) 555-5555</p>
       </div>
     </div>
-  </body>
+    <script src="./script-schedule.js"></script>
+</body>
 </html>
